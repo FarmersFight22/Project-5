@@ -1,6 +1,13 @@
 from flask import Flask
 app = Flask(__name__)
 
-@app.route('/md5/<Howdy>')
-def hello_world():
-    return 'Hello, World!'
+@app.route('/is-odd<int:n>',methods='[GET]')
+def isodd(n):
+    Odd = True
+    if(n%2 == 0):
+       Odd = False
+    response = {
+	    "input":  n,
+	    "output": Odd
+    }
+    return jsonify(response)
