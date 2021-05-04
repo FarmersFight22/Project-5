@@ -1,0 +1,8 @@
+The UPDATE action: this endpoint will overwrite the value on an existing key.
+Input payload:   { "key": "existing-key", "value": "new value" }
+Status codes:     200 Success
+                                   400 Invalid request (i.e., invalid JSON)
+                                   404 Key does not exist
+                                   
+{ "key": "existing-key", "value": "new value" }
+
