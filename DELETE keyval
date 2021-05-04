@@ -1,0 +1,15 @@
+The DELETE action: this endpoint will delete the key (and value) supplied in the URL.
+Status codes:     200 Success
+                                   400 Invalid request (i.e., invalid JSON)
+                                   404 Key does not exist
+                                   
+DELETE /keyval/<string>
+
+print("{
+    "key": "foo",
+    "value": "some value",
+    "command": "DELETE foo",
+    "result": true,
+    "error": ""
+} "
+
