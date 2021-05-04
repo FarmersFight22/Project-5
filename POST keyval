@@ -1,0 +1,5 @@
+{ "key": "new-key", "value": "new value" }
+
+Status codes:     200 Success
+                                   400 Invalid request (i.e., invalid JSON)
+                                   409 Key already exists
